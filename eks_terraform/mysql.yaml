@@ -90,5 +90,4 @@ spec:
           configMap:
             name: mysql-configmap
         - name: mysql-volume
-          persistentVolumeClaim:
-            claimName: mysql-pvc  # Ensure this matches your PVC name
+          emptyDir: {}
